@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Team",
+    "section": "",
+    "text": "You can add, remove check existance User in team and etc",
+    "crumbs": [
+      "Team"
+    ]
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "Team",
+    "section": "Install",
+    "text": "Install\npip install nbdev_hello",
+    "crumbs": [
+      "Team"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Team",
+    "section": "How to use",
+    "text": "How to use\nExamples:\nCreate team\n\nfrom nbdev_hello.user import *\n\nteam = Team(members=[User(first_name='Jorn', last_name='Doe'), User(first_name='Yuriy', last_name='Panov')])\n\n\nteam\n\nJorn Doe, Yuriy Panov, \n\n\nAdd user to team\n\nuser = User(first_name='Jonny', last_name='Gilespy')\n\n\nteam.add(user)\n\nCheck if user in team\n\nuser in team\n\nTrue",
+    "crumbs": [
+      "Team"
+    ]
+  },
+  {
+    "objectID": "user.html",
+    "href": "user.html",
+    "title": "user",
+    "section": "",
+    "text": "user = User('Yuriy', 'Panov')\n\n\ntest_eq(user, User('Yuriy', 'Panov'))\n\n\nsource\n\nUser\n\n User (first_name:str, last_name:str)\n\nSimple user account class User\n\n\n\n\nType\nDetails\n\n\n\n\nfirst_name\nstr\nfirst name of user\n\n\nlast_name\nstr\nlast name of user\n\n\n\n\nassert not test_eq(User('Yuriy', 'Panov'), User('Yuriy', 'Panov'))",
+    "crumbs": [
+      "user"
+    ]
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Team",
+    "section": "",
+    "text": "source\n\nTeam\n\n Team (members:list[nbdev_hello.user.User]=[])\n\nInitialize self. See help(type(self)) for accurate signature.\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nmembers\nlist\n[]\n\n\n\nReturns\nNone\n\nMembers\n\n\n\n\nteam = Team(members=[User(first_name='Jorn', last_name='Doe'), User(first_name='Yuriy', last_name='Panov')])\n\n\nteam\n\nJorn Doe, Yuriy Panov, \n\n\n\nUser(first_name='Jorrn', last_name='Doe') in team\n\nFalse\n\n\n\nteam.add(User('Semen','Polorotov'))\nteam.add(User('Igor','Sorokin'))\n\n\nteam\n\nJorn Doe, Yuriy Panov, Semen Polorotov, Igor Sorokin, \n\n\n\nsorted(team)\n\n[Jorn Doe, Yuriy Panov, Semen Polorotov, Igor Sorokin]",
+    "crumbs": [
+      "Team"
+    ]
+  }
+]
