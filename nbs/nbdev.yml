@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdev_hello"
+  site-url: "https://netast.github.io/nbdev_hello"
+  description: "NBdev hello"
+  repo-branch: main
+  repo-url: "https://github.com/netast/nbdev_hello"
